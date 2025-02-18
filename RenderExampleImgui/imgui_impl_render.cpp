@@ -178,7 +178,7 @@ void ImGui_ImplRender_RenderDrawData(ImRenderFrameData* frame_data, ImDrawData* 
 
                 if (Render_IsBindless())
                 {
-                    cl->SetGraphicsRootValue(1, GetDescriptorIndex(srv));
+                    cl->SetGraphicsRootValue(1, 0u, GetDescriptorIndex(srv));
                 }
                 else
                 {
